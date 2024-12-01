@@ -40,7 +40,7 @@ namespace Day1_Part2
                         {
                             locationIDRightCount[number]++;
                         }
-                        else 
+                        else
                         {
                             locationIDRightCount[number] = 1;
                         }
