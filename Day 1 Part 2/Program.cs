@@ -20,8 +20,6 @@ namespace Day1_Part2
 
                 var locationIDRightList = new List<int>();
 
-                var locationIDLeftCount = new Dictionary<int, int>();
-
                 var locationIDRightCount = new Dictionary<int, int>();
 
                 while ((line = sr.ReadLine()) != null)
