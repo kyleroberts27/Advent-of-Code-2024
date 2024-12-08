@@ -49,3 +49,32 @@ namespace Day_3_Part_2
         }
     }
 }
+
+/* Regex Pattern Explained Below:
+
+(do\(\)) 
+    do matches the characters 'do'
+    \( matches the character '('
+    \) matches the character ')'
+
+(don't\(\)) 
+    don't matches the characters 'don't''
+    \( matches the character '('
+    \) matches the character ')'
+
+
+The mul matches the characters mul literally (case sensitive)
+
+The \( matches the character '('
+
+The \d matches a digit zero through nine in any script except ideographic scripts
+
+The {1,3} matches the previous token between 1 and 3 times, as many times as possible, giving back as needed
+
+The , matches the character ',' 
+
+The \) matches the character ')'
+
+*/
+
+
