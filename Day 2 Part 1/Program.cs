@@ -46,7 +46,8 @@ namespace Day_2_Part_1
             for( var i = 1; i < levels.Count; i++)
             {
                 var distance = levels[i] - levels[i - 1];
-
+                
+                // Inverting the distance
                 if (!goingUp)
                 {
                     distance = -distance;
