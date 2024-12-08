@@ -28,7 +28,7 @@ namespace Day_2_Part_1
 
                 foreach (var report in reports) 
                 {
-                    if (isSafe(report))
+                    if (isSafe(report.ToList()))
                     {
                         total++;
                     }
@@ -38,12 +38,12 @@ namespace Day_2_Part_1
             }
         }
 
-        public static bool isSafe(int[] levels)
+        public static bool isSafe(List<int> levels)
         {
 
             var goingUp = levels[1] > levels[0];
 
-            for( var i = 1; i < levels.Length; i++)
+            for( var i = 1; i < levels.Count; i++)
             {
                 var distance = levels[i] - levels[i - 1];
 
