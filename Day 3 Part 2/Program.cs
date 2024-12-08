@@ -23,7 +23,7 @@ namespace Day_3_Part_2
 
                 var total = 0;
 
-                MatchCollection matches = Regex.Matches(input, @"(do\(\))|(don't\(\))|(mul\((\d{1,3}),(\d{1,3})\))");
+                MatchCollection matches = Regex.Matches(input, pattern);
 
                 foreach (Match match in matches)
                 {
