@@ -28,14 +28,6 @@ namespace Day_2_Part_2
 
                 foreach (var report in reports)
                 {
-                    if (isSafe(report.ToList()))
-                    {
-                        total++;
-                    }
-                }
-
-                foreach (var report in reports)
-                {
                     if (report.Select((t, i) => report.Where((_, index) => index != i).ToList()).Any(isSafe))
                     {
                         total++;
